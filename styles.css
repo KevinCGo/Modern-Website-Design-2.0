@@ -2,11 +2,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
   }
   
   .navbar {
-    background: #131313;
+    background: #e9c46a;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -32,7 +32,7 @@
   
   #navbar__logo {
     background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-image: linear-gradient(to top, black 0%, black 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -61,7 +61,7 @@
   }
   
   .navbar__links {
-    color: #fff;
+    color: black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,6 +76,7 @@
     align-items: center;
     padding: 0 1rem;
     width: 100%;
+    font-weight: 700;
   }
   
   .button {
@@ -89,17 +90,18 @@
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #f77062;
+    background: #2a9d8f;
     color: #fff;
   }
   
   .button:hover {
-    background: #4837ff;
+    background: #264653;
     transition: all 0.3s ease;
+    font-weight: 700;
   }
   
   .navbar__links:hover {
-    color: #f77062;
+    color: #e76f51;
     transition: all 0.3s ease;
   }
   
@@ -162,6 +164,7 @@
   
     .navbar__btn {
       padding-bottom: 2rem;
+      font-weight: 100;
     }
   
     .button {
@@ -200,7 +203,7 @@
   
   /* Main Content CSS */
   .main {
-    background-color: #141414;
+    background-color: #e9c46a;
   }
   
   .main__container {
@@ -210,7 +213,7 @@
     justify-self: center;
     margin: 0 auto;
     height: 90vh;
-    background-color: #131313;
+    background-color: #e9c46a;
     z-index: 1;
     width: 100%;
     max-width: 1300px;
@@ -225,8 +228,8 @@
   
   .main__content h1 {
     font-size: 4rem;
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-color: #e9c46a;
+    background-image: linear-gradient(to top, black 0%, black 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -237,8 +240,8 @@
   .main__content h2 {
     font-size: 4rem;
     margin-top: 10px;
-    background-color: #ff8177;
-    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+    background-color: #e9c46a;
+    background-image: linear-gradient(-20deg, black 0%, black 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -248,13 +251,30 @@
   
   .main__content p {
     margin-top: 1rem;
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 1.5rem;
+  }
+
+  .main__content p:after {
+    color: #fff;
+    width: 100%;
+    content: " If you save me today, I will save you tomorrow ";
+  }
+  
+  .main__content p:hover:after {
+    width: 100%;
+    color: #e76f51;
+    content:" $$ $$$ $$$$ $$ $$$$$ $ $$$$ $$$$ $$$ $$$$ ";
+  }
+
+  img:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
   }
   
   .main__btn {
-    font-size: 1rem;
-    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+    background-image: linear-gradient(to top, #2a9d8f 0%, #2a9d8f 100%);
+    font-weight: 700;
+    font-size: large;
     padding: 14px 32px;
     border: none;
     border-radius: 4px;
@@ -280,13 +300,14 @@
     left: 0;
     width: 0;
     height: 100%;
-    background: #4837ff;
+    background: #264653;
     transition: all 0.35s;
     border-radius: 4px;
   }
   
   .main__btn:hover {
     color: #fff;
+    font-weight: 700;
   }
   
   .main__btn:hover:after {
@@ -357,24 +378,24 @@
   
   /* Services Section */
   .services {
-    background: #131313;
+    background: #e9c46a;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 115vh;
   }
   
   .services h1 {
-    background-color: #ff8177;
+    background-color: #f4a261;
     background-image: linear-gradient(
       to right,
-      #ff8177 0%,
-      #ff867a 0%,
-      #ff8c7f 21%,
-      #f99185 52%,
-      #cf556c 78%,
-      #b12a5b 100%
+      white 0%,
+      white 0%,
+     white 21%,
+      white 52%,
+      white 78%,
+      white 100%
     );
     background-size: 100%;
     -webkit-background-clip: text;
@@ -382,8 +403,8 @@
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     margin-bottom: 5rem;
-    font-size: 2.5rem;
   }
+
   
   .services__container {
     display: flex;
@@ -399,9 +420,9 @@
     background-image: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0) 0%,
-        rgba(17, 17, 17, 0.6) 100%
+        #f4a261 100%
       ),
-      url('/images/pic3.jpg');
+      url('Transaction\ _Flatline.svg');
     background-size: cover;
     position: relative;
     color: #fff;
@@ -415,7 +436,7 @@
     background-image: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0) 0%,
-        rgba(17, 17, 17, 0.9) 100%
+        #f4a261 100%
       ),
       url('/images/pic4.jpg');
   }
@@ -482,7 +503,7 @@
   
   /* Footer CSS */
   .footer__container {
-    background-color: #141414;
+    background-color: #e9c46a;
     padding: 5rem 0;
     display: flex;
     flex-direction: column;
@@ -491,7 +512,7 @@
   }
   
   #footer__logo {
-    color: #fff;
+    color: black;
     display: flex;
     align-items: center;
     cursor: pointer;
