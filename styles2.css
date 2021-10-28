@@ -6,6 +6,20 @@
   }
   
 
+.carousel-inner {
+    height: 700px;
+    
+}
+ 
+.item.active {
+    height: 310px!important;
+}
+ 
+.item img {
+    object-fit: contain;
+    height: 100px;
+}
+
   .navbar {
     background: #e9c46a;
     height: 80px;
