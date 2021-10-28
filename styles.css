@@ -257,7 +257,7 @@
 .main__content p:after {
   color: #fff;
   width: 100%;
-  content: " If you save me today, I will save you tomorrow ";
+  content: " If you save me today, I will save you tomorrow. ";
 }
 
 .main__content p:hover:after {
