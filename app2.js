@@ -15,9 +15,12 @@ var IdealTimeOut = 10; //10 seconds
             if (idleSecondsCounter >= IdealTimeOut) {
                 window.clearInterval(idleSecondsTimer);
                 alert("Want to make money? Be motivated. Click OK!");
-                window.location = "index.html";
+                window.location = "motivation.html";
             }
         }
+
+
+        
 
 const menu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.navbar__menu');
